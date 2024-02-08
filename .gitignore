@@ -1,0 +1,54 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+/coverage
+/.nyc_output
+/.jest
+
+# Build output
+dist/
+build/
+.cache/
+
+# Temporary files
+*.tmp
+*.swp
+*.pid
+*.seed
+*.pid.lock
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Others
+*.tgz
+*.gz
+*.zip
+*.tar
