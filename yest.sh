@@ -4,7 +4,7 @@
 current_date=$(date +%Y-%m-%d)
 
 # Get the list of modified files in the git repository
-files=$(git status --porcelain)
+files=$(git ls-files -m)
 
 if [ -z "$files" ]; then
   echo "No changes detected."
@@ -14,7 +14,8 @@ fi
 # Loop through each modified file
 for file in $files; do
   # Set the date to the previous day
-  
+  sudo date -s "$current_date - 1 day"
+
   # Add the file to the staging area
   git add "$file"
 

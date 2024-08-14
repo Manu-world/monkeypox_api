@@ -36,6 +36,7 @@ build/
 *.pid
 *.seed
 *.pid.lock
+/yest.sh
 
 # IDEs and Editors
 .idea/
